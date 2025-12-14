@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Clinique Espoir — Accueil</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="container header">
+    <div class="logo">
+      <div class="mark">E</div>
+      <div>
+        <div>Clinique Espoir</div>
+        <div style="font-size:12px;color:var(--muted);font-weight:500">Soins médicaux de confiance</div>
+      </div>
+    </div style=font-size>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#doctors">Équipe</a>
+      <a href="#contact">Contact</a>
+      <a class="cta" href="#book">Prendre RDV</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="kv"><span class="badge">Service 24/7</span><small style="color:var(--muted)">Équipe médicale certifiée</small></div>
+        <h1>Des soins au plus haut niveau — rapides, professionnels et humains</h1>
+        <p>Clinique polyvalente offrant consultations, analyses et suivi médical — prenez rendez-vous ou consultez en ligne.</p>
+
+        <div class="search-box">
+          <input class="input" placeholder="Rechercher un médecin, une spécialité ou un service (ex : ophtalmologie)" />
+          <button class="btn-primary">Rechercher</button>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:18px">
+          <div class="card" style="display:flex;gap:12px;align-items:center;">
+            <div style="font-size:20px">🩺</div>
+            <div>
+              <div style="font-weight:700">Consultations générales</div>
+              <div style="color:var(--muted);font-size:13px">Médecin disponible maintenant</div>
+            </div>
+          </div>
+          <div class="card" style="display:flex;gap:12px;align-items:center;">
+            <div style="font-size:20px">🧪</div>
+            <div>
+              <div style="font-weight:700">Laboratoire</div>
+              <div style="color:var(--muted);font-size:13px">Résultats en 24 heures</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <aside>
+        <div class="hero-card">
+          <h3>Réservez votre rendez-vous</h3>
+            <div style="margin-bottom:10px"><input class="input" placeholder="Nom:" required></div>
+            <div style="margin-bottom:10px"><input class="input" placeholder="email:" required></div>
+            <div style="margin-bottom:10px"><input class="input" placeholder="Numéro de téléphone:" required></div>
+            <div style="margin-bottom:10px"><select class="input"><option>Sélectionner une spécialité</option><option>Médecine générale</option><option>Dentisterie</option><option>Pédiatrie</option></select></div>
+            <button class="btn-primary" style="width:100%">Demander RDV</button>
+          </form>
+        </div>
+      </aside>
+    </section>
+
+    <section id="services">
+      <h2>Nos services</h2>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="card">
+          <div style="font-size:26px">🩺</div>
+          <h3>Consultations médicales</h3>
+          <p>Suivis et consultations d'urgence avec des médecins expérimentés.</p>
+        </div>
+        <div class="card">
+          <div style="font-size:26px">🧪</div>
+          <h3>Analyses de laboratoire</h3>
+          <p>Analyses précises et délais de rendu rapides.</p>
+        </div>
+        <div class="card">
+          <div style="font-size:26px">💉</div>
+          <h3>Vaccination et prévention</h3>
+          <p>Programmes de prévention et vaccinations pour la communauté.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="doctors" style="margin-top:22px">
+      <h2>Notre équipe</h2>
+      <div class="doctors" style="margin-top:12px">
+        <div class="doctor">
+          <img src="doc.png" alt="Médecin">
+          <div>
+            <h4>Dr. Karim El Mansouri</h4>
+            <p>Cardiologist (طبيب القلب)</p>
+          </div>
+        </div>
+        <div class="doctor">
+          <img src="sara.png" alt="Docteure">
+          <div>
+            <h4>Dr. Sara Belkadi</h4>
+            <p>Pediatrician (طبيبة الأطفال)</p>
+          </div>
+        </div>
+        <div class="doctor">
+          <img src="doc1.png" alt="Médecin">
+          <div>
+            <h4>Dr. Youssef Haddad</h4>
+            <p>Dermatologist (طبيب الجلد)</p>
+          </div>
+        </div>
+        <div class="doctor">
+          <img src="doc2.png" alt="Docteur">
+          <div>
+            <h4>Dr. Amine Rachidi</h4>
+            <p>Dentist (طبيب الأسنان)</p>
+          </div>
+        </div>
+        <div class="doctor">
+          <img src="doc3.png" alt="Médecin">
+          <div>
+            <h4>Dr. Mehdi Ouarzazi</h4>
+            <p>Orthopedic Surgeon (جراحة العظام)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact-strip" id="contact">
+      <div class="contact-left">
+        <div style="font-size:20px">📞</div>
+        <div>
+          <strong>Besoin d'aide ? Contactez-nous</strong>
+          <div style="color:var(--muted);font-size:13px">+212 6 31 78 22 27 — Service rendez-vous</div>
+        </div>
+      </div>
+      <div class="contact-right"><a href="tel:+212612345678">Appel direct</a></div>
+    </div>
+
+    <footer class="footer">
+      <small>© 2025 Clinique Espoir. Tous droits réservés.</small>
+      <div>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions</a>
+      </div>
+    </footer>
+  </main>
+
+</body>
+</html>
