@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>resrvatoin</title>
+  <link rel="stylesheet" href="resrvatoin.css">
+ 
+</head>
+<body>
+
+  <div class="container">
+    <h2>Prendre un rendez-vous médical</h2>
+
+    
+    <label>Choisir le médecin :</label>
+    <select id="doctor">
+      <option value="">--- Choisir le médecin---</option>
+      <option>Dr. Ahmed – Cardiologie</option>
+      <option>Dr. Sara – Ophtalmologie</option>
+      <option>Dr. Youssef – Dentisterie</option>
+      <option>Dr. Leila – Pédiatrie</option>
+    </select>
+    <label>Choisir la date :</label>
+    <input type="date" id="date">
+    <label>Choisir l’heure :</label>
+    <select id="time">
+      <option value="">--- Choisir l’heure ---</option>
+      <option>09:00</option>
+      <option>10:30</option>
+      <option>12:00</option>
+      <option>14:00</option>
+      <option>16:30</option>
+    </select>
+
+    <!-- Informations du patient-->
+    <label>Nom complet :</label>
+    <input type="text" id="fullname">
+
+    <label>Numéro de téléphone :</label>
+    <input type="text" id="phone">
+
+    <label>Raison de la visite (facultatif) :</label>
+    <textarea id="reason" rows="3"></textarea>
+
+    <button onclick="submitBooking()">Confirmer la réservation</button>
+
+    <!-- Message de succès-->
+    <div class="success" id="successBox">
+     ✔ Le rendez-vous a été réservé avec succès !  
+      <br>Nous vous contacterons pour confirmer la réservation.
+    </div>
+
+  </div>
+
+<script>
+  function submitBooking() {
+    let doctor = document.getElementById("doctor").value;
+    let date = document.getElementById("date").value;
+    let time = document.getElementById("time").value;
+    let fullname = document.getElementById("fullname").value;
+    let phone = document.getElementById("phone").value;
+
+    if (!doctor || !date || !time || !fullname || !phone) {
+      alert("Veuillez remplir tous les champs obligatoires !");
+      return;
+    }
+
+    //API (fetch...)
+    document.getElementById("successBox").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
