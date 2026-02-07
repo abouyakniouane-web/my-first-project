@@ -41,7 +41,12 @@ body{
 }
 
 .logo{
-  display:flex;align-items:center;gap:12px;font-weight:700;font-size:18px;color:var(--accent-2)
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:700;
+  font-size:18px;
+  color:var(--accent-2)
 }
 .logo .mark{
     width:44px;
@@ -251,6 +256,16 @@ body{
 .contact-right a:hover{
     color:var(--accent-2);
     transform:translateY(-2px)
+}
+.parent{
+    display: flex;
+}
+.doc1{
+    width: 20%;
+}
+.doc1 img{
+    max-width: 60%;
+    border-radius: 20%;
 }
 .footer{
     display:flex;
